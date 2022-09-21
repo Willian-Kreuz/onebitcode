@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Liga dos Astronautas</title>
+</head>
+<body>
+    <h1>Cadastro da Liga dos Astronautas</h1>
+    <form action="">
+        <label for="name">Nome: </label>
+        <input type="text" id="name" name="name">
+    </form><br>
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+        <label for="Password">- Password: </label>
+        <input type="password" id="Password" name="Password">
+    </div><br>
+    <div>
+        <label for="Data">Data de Nascimento: </label>
+        <input type="date" id="Data" name="Data">
+        <label for="Foto">- Foto: </label>
+        <input type="file" id="Foto" name="Foto">
+    </div><br>
+    <div>
+        <label for="Nacionalidade">Nacionalidade: </label>
+        <select name="Nacionalidade" id="Nacionalidade">
+            <option value="Russo">Russo</option>
+            <option value="Americano">Americano</option>
+            <option value="Brasileiro">Brasileiro</option>
+        </select>   
+        <span>- Genero:</span>
+        <label for="Female">F</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Male">M</label>
+        <input type="radio" id="Male" name="gender" value="Male">
+    </div><br>
+    <div>
+       Suas principais qualidades: <br>
+        <label for="Inteligencia">Inteligência</label>
+        <input type="checkbox" id="Inteligencia" name="Inteligencia">
+        <label for="Resiliencia">| Resiliencia</label>
+        <input type="checkbox" id="Resiliencia" name="Resiliencia">
+        <label for="Preparo Fisico">| Preparo Fisico</label>
+        <input type="checkbox" id="Preparo Fisico" name="Preparo Fisico">
+        <label for="Educação">| Educação</label>
+        <input type="checkbox" id="Educação" name="Educação">
+    </div><br>
+    <div>
+        <textarea name="descrição" placeholder="Porque você gostaria de ser um astronauta?"></textarea><br>
+    </div>
+    <div>
+        <input type="submit" value="Criar">
+    </div><br>
+    
+</body>
+</html>
