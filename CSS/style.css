@@ -1,7 +1,37 @@
+body{
+    background-image: url('https://rocketsciencebrasil.com/wp-content/uploads/2019/03/electron.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1{
-    color: purple;
+    color: #fff;
+    border-color: #ebfc03;
+    border-width: 2px;
+    border-style: solid;
 }
 
-li{
-    color: green;
+h4{
+    color: #fff;
+    border: 2px solid #ffa500;
 }
+
+ul{
+    color: #fff;
+}
+
+li.moon{
+    color: #ebfc03;
+}
+
+li.sun{
+    color: #cc890d;
+}
+
+li.rain{
+    color: #0da3a3;
+}
+
+li#planeta{
+    color: #e00da1;
+}
+   
