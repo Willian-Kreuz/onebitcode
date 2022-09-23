@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    margin: 45px auto 200px auto;
+    text-align: center;
+    width: 15%;
+    border: 2px solid;    
+    padding: 10px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+p.dois{
+    font-family: 'Dancing Script', cursive;
+}
+
+p.tres{
+    font-family: 'Bungee Spice', cursive;
+}

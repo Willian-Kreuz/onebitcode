@@ -1,0 +1,17 @@
+section{
+    background-color: #fffafa;
+    
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p.date{
+    font-family: 'Roboto', sans-serif;
+    color: #008080;
+}
