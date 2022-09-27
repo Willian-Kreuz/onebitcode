@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+section{
+    background-color: #fffafa;
+    width: 70%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+}
+
+div.conteudo{
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p{
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+p.date{
+    font-family: 'Roboto', sans-serif;
+    color: #008080;
+    font-weight: 900;
+}
