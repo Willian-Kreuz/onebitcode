@@ -8,9 +8,6 @@
         @include text-style(#ff4043, 34px, Arial)
     }
     p{
-        color: blue;
-        font-size: 22px;
-        font-family: sans-serif;
         @include text-style(blue, 22px, sans-serif)
     }
 }
