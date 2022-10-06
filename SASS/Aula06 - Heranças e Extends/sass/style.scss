@@ -15,7 +15,7 @@
 }
 
 .btn-purple{
-    @extend .btn
+    @extend .btn;
     background-color: purple;
     color: white;
 }
