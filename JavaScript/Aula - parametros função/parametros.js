@@ -38,6 +38,7 @@ function poucosParametros(usuario){
     usuario.nome
     usuario.email
     usuario.endereco
+
 }
 
 const dadosUsuario ={
