@@ -1,9 +1,9 @@
-let name = prompt("Digite o nome do recruta: ")
-let lastName = prompt("Digite o sobrenome do recruta: ")
-let study = prompt("Digite o campo de estudo: ")
-let yearsOld = parseFloat(prompt("Digite o ano que o recruta nasceu: "))
+let firstName = prompt("Digite o seu primeiro nome: ")
+let lastName = prompt("Digite o seu sobrenome: ")
+let study = prompt("Digite o campo de estudos: ")
+let year = parseFloat(prompt("Digite o ano que você nasceu: "))
 
-let years = 2023 - yearsOld
-
-alert("Seja bem-vindo, " + name + " " + lastName + "\nO campo de estudo escolhido foi: " + study + "\n Atualmente você possui " + years + " anos de idade.")
+alert("Nome do recruta: " + firstName + " " + lastName +
+"\nCampo de estudos: " + study +
+"\nIdade: " + (2023-year))
 
