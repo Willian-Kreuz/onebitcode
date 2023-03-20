@@ -1,33 +1,34 @@
 let value = parseFloat(prompt("Digite um valor em metros: "))
-let option = prompt("Digite a unidade de medida que desejas: \n" +
-"\nmm - milímetro"+
-"\ncm - centímetro"+
-"\ndm - decímetro"+
-"\ndam - decâmetro"+
-"\nhm - hectômetro"+
-"\nkm - quilômetro")
+const option = prompt("Escolha uma opção: " +
+"\nmm - milímetro(mm)" +
+"\ncm - centímetro(cm)" +
+"\ndm - decímetro(dm)" +
+"\ndam - decâmetro(dam)" +
+"\nhm - hectômetro(hm)" + 
+"\nkm - quilômetro(km)"
+)
 
 switch(option){
-    case 'mm':
-        value *= 1000
+    case "mm":
+        value *=1000
         break
-    case 'cm':
-        value *= 100
+    case "cm":
+        value *=100
         break
-    case 'dm':
-        value *= 10
+    case "dm":
+        value *=10
         break
-    case 'dam':
+    case "dam":
         value /= 10
         break
-    case 'hm':
+    case "hm":
         value /= 100
         break
-    case 'km':
-        value /=1000
+    case "km":
+        value /= 1000
         break
     default:
-        alert("Operação não encontrada")
+        alert("Opção inválida")
 }
 
-alert("Valor convertido em "+ option + " = " + value)
+alert("Valor em " + option + ": " + value)
