@@ -5,9 +5,8 @@ let subtracao = numberOne - numberTwo
 let multiplicacao = numberOne * numberTwo
 let divisao = numberOne / numberTwo
 
-alert("O resultado das quatro operações foram: " +
-"\n" + numberOne + " + " + numberTwo + " = " + soma +
-"\n" + numberOne + " - " + numberTwo + " = " + subtracao +
-"\n" + numberOne + " * " + numberTwo + " = " + multiplicacao +
-"\n" + numberOne + " / " + numberTwo + " = " + divisao)
-
+alert("Resultados das operações: \n"+
+numberOne + " + " + numberTwo + " = " + soma+ "\n"+
+numberOne + " - " + numberTwo + " = " + subtracao+ "\n"+
+numberOne + " x " + numberTwo + " = " + multiplicacao+ "\n"+
+numberOne + " / " + numberTwo + " = " + divisao)
