@@ -1,26 +1,28 @@
-let pacient = ["Robert", "Roman", "Elizabeth", "Escobar"]
-let option
-
+let paciente = []
+let option, adicionar, remover
 do{
-    option = prompt("Digite a opção desejada: \n"+
-    "\n1- Novo paciente" +
-    "\n2- Consultar Paciente" +
-    "\n3- Sair")
+    let pacientes = ""
+    for(let i = 0; i < paciente.length; i++){
+        pacientes += (i+1) + "º - " + paciente[i] + "\n"
+    }
 
+    option = prompt("Fila de pacientes: \n" + pacientes+ "\n\nEscolha a opção desejada: " + 
+    "\n1 - Novo paciente" +
+    "\n2 - Consultar paciente" +
+    "\n3 - Sair")
     switch(option){
         case "1":
-            pacient.push(prompt("Digite o nome do paciente: "))
+            adicionar += paciente.push(prompt("Digite o nome do paciente: "))
             break
         case "2":
-            let first = pacient.shift()
-            alert("O próximo paciente é: "+ first)
+            remover = paciente.shift()
+            alert("Próximo paciente: " + remover)
             break
         case "3":
-            alert("Saindo so sistema...")
+            alert("Saindo")
             break
         default:
-            alert("Opção não encontrada")
+            alert("Opção inválida")
     }
-}while (option != "3")
 
-alert("Programa finalizado.")
+}while(option != 3)
