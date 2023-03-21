@@ -1,7 +1,7 @@
 const word = prompt("Escreva uma palavra: ")
 let invertedWord = ''
 
-for(let i = word.length - 1; i >= 0; i--){
+for(let i = word.length - 1; i >= 0; i--){ //word.length - 1 significa que irá começar da última letra da palavra
     invertedWord += word[i]
 }
 

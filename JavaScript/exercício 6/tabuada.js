@@ -1,8 +1,10 @@
-let number = parseFloat(prompt("Digite o número na qual faremos a tabuada: "))
-let result = ''
-for(let i = 0; i <= 20 ; i++){
-    let multiplication = i * number
-    result += (number + " x " + i + " = " + multiplication + "\n" )
+let number = parseFloat(prompt("Digite um valor para calcularmos a tabuada: "))
+let tabuada = ""
+
+for(let i = 0 ; i <= 20 ; i++){
+    tabuada += "\n- " + number + " x " + i + " = " + (number * i)
 }
 
-alert(result)
+alert("Resultado tabuada: \n"+
+tabuada
+)
