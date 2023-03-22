@@ -1,29 +1,31 @@
-let deckOfCards = ["-A\n", "-1\n", "-Q\n", "-3\n", "-10\n"]
-let option
+let baralho = []
+let option = ""
 
 do{
-    alert("Atualmente, o baralho possui as seguintes cartas: \n" + deckOfCards)
     
-    option = prompt("Digite a opção desejada: \n"+
-    "\n1 - Adicionar uma Carta"+
-    "\n2 - Puxar uma carta"+
+    option = prompt("Quantidade de cartas: " + baralho.length + "\n\nEscolha uma opção: "+
+    "\n1 - Adicionar uma carta"+
+    "\n2 - Remover uma carta"+
     "\n3 - Sair")
 
     switch(option){
-        case "1":
-            deckOfCards.push("-" + (prompt("Digite a carta que você deseja adicionar: ")) + "\n")
+        case '1':
+            baralho.push(prompt("Digite o nome da carta: "))
             break
-        case "2":
-            let lastLetter = deckOfCards.pop()
-            alert("A carta retirada foi: " + lastLetter)
+        case '2':
+            let remove = baralho.pop()
+            if(!remove){
+                alert("Não há nenhuma carta no baralho!")
+            }else{
+                alert("A carta puxada foi: " + remove)
+            }
             break
-        case "3":
-            alert("Finalizando programa...")
+        case '3':
+            alert("Saindo...")
             break
         default:
             alert("Opção Inválida")
+
     }
 
-}while(option !== "3")
-
-alert("Programa finalizado")
+}while(option != 3)
