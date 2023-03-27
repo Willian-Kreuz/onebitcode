@@ -40,7 +40,7 @@ function mostrarVaga(){
     alert("Vaga nº " + indice + 
     "\nNome: " + vagas.nome +
     "\nDescrição: " + vagas.descricao +
-    "\nData limite: "+ vaga.dataLimite +
+    "\nData limite: "+ vagas.dataLimite +
     "\nQuantidade de candidatos: " + vagas.candidatos.length +
     "\nCandidatos inscritos: " + candidatosEmTexto
     )
@@ -66,8 +66,8 @@ function excluirVaga(){
     const indice = prompt("Informe o índice da vaga que deseja excluir: ")
     const vagas = vaga[indice]
 
-    const confirmacao = confirm("Tem certeza que deseja excluir a vaga " + indice + 
-    "Nome: " + vagas.nome + 
+    const confirmacao = confirm("Tem certeza que deseja excluir a vaga " + indice + "?" +
+    "\nNome: " + vagas.nome + 
     "\nDescrição:  " + vagas.descricao +
     "\nData Limite: " + vagas.dataLimite
     )
