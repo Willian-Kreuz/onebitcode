@@ -16,8 +16,26 @@ function adicionar() {
     li.innerText = posicao + ": " + nome + " (" + numero + ") ";
     listaTime.appendChild(li);
 
-    document.getElementById("position").value = "";
-    document.getElementById("name").value = "";
-    document.getElementById("number").value = "";
+    document.getElementById("posicao").value = "";
+    document.getElementById("nome").value = "";
+    document.getElementById("numero").value = "";
+  }
+}
+
+function remover() {
+  const listaTime = document.getElementById("listaDoTime");
+
+  const numeroRemovido = document.getElementById("numeroRemovido").value;
+
+  const confirmacao = confirm(
+    "Você confirma a remoção do jogador que utiliza a camisa " +
+      numeroRemovido +
+      "?"
+  );
+
+  if (confirmacao) {
+    const li = document.getElementById("player- " + numeroRemovido);
+    listaTime.removeChild(li);
+    document.getElementById("numeroRemovido").value = "";
   }
 }
