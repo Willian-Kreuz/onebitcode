@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ex3.js"></script>
+    <title>Lista de compras</title>
+  </head>
+  <body>
+    <h1>Lista de compras</h1>
+    <hr />
+    <section>
+      <label for="mercadoria">Informe o nome do item:</label>
+      <input type="text" name="mercadoria" id="mercadoria" />
+      <br /><br />
+      <label for="valor">Informe o valor do item:</label>
+      <input type="number" name="valor" id="valor" />
+      <br /><br />
+      <button onclick="adicionar(this.parentNode)">Adicionar</button>
+      <button onclick="remover(this.parentNode)">Remover item</button>
+      <hr />
+      <h2>Itens adicionados:</h2>
+      <ul id="itens"></ul>
+
+      <h3>Valor a pagar: <div id="valorFinal"></div></h3>
+      
+    </section>
+  </body>
+</html>
