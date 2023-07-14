@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ex1.js"></script>
+    <title>Treinando</title>
+  </head>
+  <body>
+    <h1>Enviando valores DOM para o JavaScript</h1>
+    <hr />
+    <section>
+      <h2>Cadastrando funcionário</h2>
+      <hr />
+      <label for="nome">Nome do funcionário: </label>
+      <input type="text" name="nome" id="nome" />
+      <br />
+      <label for="departamento">Departamento: </label>
+      <input type="text" name="departamento" id="departamento" />
+      <br />
+      <label for="numero">Número do cadastro: </label>
+      <input type="number" name="numero" id="numero" />
+
+      <button onclick="cadastrar(this.parentNode)">Cadastrar</button>
+    </section>
+  </body>
+</html>

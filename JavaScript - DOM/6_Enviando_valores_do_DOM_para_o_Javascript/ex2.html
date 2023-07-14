@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ex2.js"></script>
+    <title>Calculadora Simples</title>
+  </head>
+  <body>
+    <h1>Calculadora Simples</h1>
+    <hr />
+    <section>
+      <h2>Informações:</h2>
+      <label for="numero1">Digite o primeiro número: </label>
+      <input type="number" name="numero1" id="numero1" />
+      <br />
+      <br />
+      <label for="numero2">Digite o segundo número: </label>
+      <input type="number" name="numero2" id="numero2" />
+      <br />
+      <br />
+      <button onclick="somar(this.parentNode)">Somar</button>
+      <button onclick="diminuir(this.parentNode)">Diminuir</button>
+      <button onclick="dividir(this.parentNode)">Dividir</button>
+      <button onclick="multiplicar(this.parentNode)">Multiplicar</button>
+      <br />
+      <br />
+      <section id="resultado">Resultado:</section>
+    </section>
+  </body>
+</html>
