@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de inscrição</title>
+    <script src="ex1.js" defer></script>
+  </head>
+  <body>
+    <h1>Cadastro de jogador</h1>
+    <hr />
+    <form id="jogador">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" />
+      <br /><br />
+      <label for="posicao">Posição:</label>
+      <select name="posicao" id="posicao">
+        <option selected disabled>Selecione a opção</option>
+        <option value="atacante">Atacante</option>
+        <option value="meioCampo">Meio Campo</option>
+        <option value="volante">Volante</option>
+        <option value="lateral">Lateral</option>
+        <option value="zagueiro">Zagueiro</option>
+        <option value="goleiro">Goleiro</option>
+      </select>
+      <br /><br />
+      <label>Perna Boa:</label>
+      <br />
+      <input type="radio" name="main" id="direita" value="Direita" />
+      <label for="direita">Direita</label>
+      <input type="radio" name="main" id="esquerda" value="Esquerda" />
+      <label for="esquerda">Esquerda</label>
+      <input type="radio" name="main" id="ambas" value="Ambas as Pernas" />
+      <label for="ambas">Direita e Esquerda</label>
+      <br /><br />
+      <button type="submit">Cadastrar</button>
+    </form>
+  </body>
+</html>
